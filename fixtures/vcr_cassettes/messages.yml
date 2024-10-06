@@ -1,0 +1,45 @@
+---
+http_interactions:
+  - request:
+      method: post
+      uri: https://api.smsgatewayapi.com/v1/message/send
+      body:
+        encoding: UTF-8
+        string: '{"to":"+3161245678","message":"Hello this is a test message!","sender":"Ruby SDK"}'
+      headers:
+        User-Agent:
+          - Faraday v2.11.0
+        Content-Type:
+          - application/json
+        accept:
+          - application/json
+        x-client-id:
+          - "436621713682841522298"
+        X-Client-Secret:
+          - FGbXCUtjrY64E32BbBkz8
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        date:
+          - Wed, 28 Aug 2024 13:04:54 GMT
+        access-control-allow-origin:
+          - "*"
+        access-control-allow-headers:
+          - X-Client-Id, X-Client-Secret, X-Authorization, Content-Type
+        access-control-allow-methods:
+          - GET, POST, PUT, PATCH, DELETE, OPTIONS
+        vary:
+          - Accept-Encoding
+        content-encoding:
+          - gzip
+        content-length:
+          - "66"
+        content-type:
+          - application/json; charset=utf-8
+      body:
+        encoding: UTF-8
+        string: '{"messageid":"e0ncuxht345hjmbjvv2feky0azflcw"}'
+    recorded_at: Wed, 28 Aug 2024 13:04:54 GMT
+recorded_with: VCR 6.2.0
